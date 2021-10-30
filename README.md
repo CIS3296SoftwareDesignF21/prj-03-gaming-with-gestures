@@ -1,4 +1,4 @@
-# Gaming With Gestures: Gesture Recognition Using Machine Learning
+# Gaming With Gestures: Gesture Recognition Using Machine Learning <img src="https://drive.google.com/uc?export=view&id=10pEPAWtMe4R3jUYgyDQsqDI5LmS81gAT" width="25" height="25">
 ***
 ## Table of Contents
 1. [Project Overview](#project-overview)
