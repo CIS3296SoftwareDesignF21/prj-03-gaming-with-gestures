@@ -32,6 +32,11 @@ Rebecca, age 15, is a high school student studying at Villa Park High School in 
 
 Rebecca, has taken interest in the Gaming with Gestures application because she understands that it is going to allow her the ability to still play popular dancing games, but without the high price or the hardware learning curve. Because of the Gaming with Gestures functionality to recognize dynamic gestures, Rebecca will be able to play her favorite dancing games and have her physical movements picked up and registered as game controls.
 
+#### Timmy Ternur, A high school student
+Timmy, age 16, is a high school student in the United States. He has a healthy interest in technology and videogames. His father works as a mechanic and his mother is a teacher at the nearby middle school. He is planning on pursuing a computer science degree when he graduates from high school.
+
+Timmy has plenty of experience in a variety of gaming software. He is interested in a gesture recognition software as the controller for his videogames. He would like to avoid remapping all of his control settings for all of his games. As such, he would use the built-in settings to customize what gestures are assigned to which keys.
+
 ***
 <a name = "hello-world"></a>
 ## Hello World 
