@@ -22,10 +22,14 @@
 
 <a name = "our-vision"></a>
 ### Our Vision
+FOR members of the gamming community WHO desires a more intuititive and immersive gaming experience without extra hardware and cost. THE Gaming with Gestures Project is a application THAT provides hand tracking, static gesture-based game controls, and dynamic gesture-based game controls. UNLIKE other hardware-based games or immersive gaming software, OUR product provides immersive gamming without the use of unique hardware, making it a more cost efficient and user friendly option.
 
 <a name = "personas-features"></a>
 ### Personas and Key Features
+#### Rebecca Black, A high school student at Villa Park High School
+Rebecca, age 15, is a high school student studying at Villa Park High School in Villa Park, California. She has recently been accepted to the dance team at her school. During her first few practices, she has had a hard time keeping up with the moves. In fear of being kicked off the team for not showing improvement, Rebecca wants to make more time at home to practice so that she can perform the moves correctly and in time. She is aware of different gaming options she can explore to practice dancing, however she has an especially tight budget, and little time to learn new devices as she is not particularly tech savvy.
 
+Rebecca, has taken interest in the Gaming with Gestures application because she understands that it is going to allow her the ability to still play popular dancing games, but without the high price or the hardware learning curve. Because of the Gaming with Gestures functionality to recognize dynamic gestures, Rebecca will be able to play her favorite dancing games and have her physical movements picked up and registered as game controls.
 
 ***
 <a name = "hello-world"></a>
