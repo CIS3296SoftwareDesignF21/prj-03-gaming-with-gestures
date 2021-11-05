@@ -18,7 +18,7 @@
 
 ***
 <a name = "project-overview"></a>
-## Project Overview <img src="https://drive.google.com/uc?export=view&id=1cHgkaq1PuTyjD0DQ_qXhZFF8i2f6DJIP" width="25" height="25">
+## Project Overview 
 
 <a name = "our-vision"></a>
 ### Our Vision
@@ -29,34 +29,34 @@
 
 ***
 <a name = "hello-world"></a>
-## Hello World <img src="https://drive.google.com/uc?export=view&id=1frSKQkd5TNYk_KSZf67dU40n0oOUejR1" width="25" height="25">
+## Hello World 
 
 <a name = "download-install"></a>
-### How to Download and Install Hello World <img src="https://drive.google.com/uc?export=view&id=1_Bjnm_ETsXuB6KEmZHueuFDssfolsgc6" width="20" height="20">
+### How to Download and Install Hello World
 
 <a name = "run"></a>
-### How to Run Hello World <img src="https://drive.google.com/uc?export=view&id=19VUkLRwEpEm8mej6jBYVFjCMf2wavGcQ" width="20" height="20">
+### How to Run Hello World
 
 
 ***
 <a name = "technologies"></a>
-## Technologies <img src="https://drive.google.com/uc?export=view&id=1kdtXi1gMKBi_Ea0f8DaG-36fj-ypgKJM" width="25" height="25">
+## Technologies
 
 
 ***
 <a name = "new-releases"></a>
-## New Releases <img src="https://drive.google.com/uc?export=view&id=1TtczGAXzMvxoHgDyct7lSMIAjSeY1ysO" width="25" height="25">
+## New Releases
 
 <a name = "download-install-release"></a>
-### How to Download and Install New Release <img src="https://drive.google.com/uc?export=view&id=1_Bjnm_ETsXuB6KEmZHueuFDssfolsgc6" width="20" height="20">
+### How to Download and Install New Release
 
 <a name = "run-release"></a>
-### How to Run New Release <img src="https://drive.google.com/uc?export=view&id=19VUkLRwEpEm8mej6jBYVFjCMf2wavGcQ" width="20" height="20">
+### How to Run New Release
 
 
 ***
 <a name = "team-contributions"></a>
-## Team Contributions <img src="https://drive.google.com/uc?export=view&id=1NtUsC-OI_9_p8tD1bbf3YTAiq96x-7f-" width="25" height="25">
+## Team Contributions
 
 <a name = "team"></a>
 ### Meet Our Team
@@ -67,7 +67,7 @@
 
 ***
 <a name = "resources"></a>
-## Resources <img src="https://drive.google.com/uc?export=view&id=1VXPuicrEIhlEv17tSWY_FnFv5wTSZ5CU" width="25" height="25">
+## Resources
 
 
 ***
