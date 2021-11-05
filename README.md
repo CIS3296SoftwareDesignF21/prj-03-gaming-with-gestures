@@ -25,6 +25,10 @@
 
 <a name = "personas-features"></a>
 ### Personas and Key Features
+1. Static Gesture Recognition
+Emily is a 27 year old mother of one who lives in San Francisco, California. She was born in Oakland to parents who were partially deaf at a young age. While Emily isn’t deaf, individuals in her family are, including her son. She moved to San Francisco due to her husband’s job and currently works as an IoT Specialist from home while she takes care of her son. She obtained a degree in computer science, at the California Institute of Technology, to help achieve her dream job of working in the field of technology. With a husband and son, she looks forward to a life of happiness in her family.
+
+As an IoT Specialist, Emily has already done work in the coding field. She has used multiple languages and ultimately prefers to use python. In relation to this project, Emily believes that she could use the hand recognition features to help her son and other deaf individuals learn sign language from home. She has an interest in this project because her son can try to practice signing out letters and maybe some words while she has her own job to attend to.
 
 
 ***
