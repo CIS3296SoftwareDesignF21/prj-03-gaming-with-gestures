@@ -1,3 +1,11 @@
 # Project Proposal
 
 ***
+## Project Overview
+Gestures are a natural way of communicating or clarifying ideas or intentions. This especially makes gestures a more user-friendly approach to gaming. Often when utilizing a controller, novice players are tasked with the initial learning curves of using buttons and joystick movements to perform successfully in a game. Furthermore, a controller can confine a player to more rigid and unnatural movements, resulting in the lack of immersion or gaming interaction. Considering this, the goal of this project is to enhance the gaming experience by detecting and recognizing gestures as the controls for gaming interaction. This is intended to be done using machine learning. Whether it is driving, dribbling, or performing a complex combination of hand seals, gestures can be an efficient and immersive way to interact with our favorite video games.
+
+## Educational Goals
+This project intends to meet the educational goals including, project management, issue tracking, testing, and team contributions to an open-sourced project. Transitioning successfully from one stage of this project to the next will require lots of testing, recording, and team communication. This project is intended to be managed using GitHub.
+
+## Proposed Work and Contributions
+This project is composed up of three main parts. Object tracking, software communication, and gesture recognition. In the object tracking stage, a part of the human body (example: hand) will be tracked and processed based on its cardinal directional movements (i.e., north, south, east, and west movements). This is intended to be done using OpenCV Python. OpenCV is an open-sourced library capable of processing images and videos to identify objects, people, and symbols. In the software communication stage, we will need to find a way to communicate the movement of an object as commands for specific gaming interactions. One way to do this is to use a Universal Virtual Joypad and the WebSocket communication protocol. In the final stage of this project, gesture recognition, gestures from a hand or head will be recognized using machine learning. A future expansion of this project could be its implementation with augmented and virtual reality.
