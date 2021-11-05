@@ -37,6 +37,17 @@ Timmy, age 16, is a high school student in the United States. He has a healthy i
 
 Timmy has plenty of experience in a variety of gaming software. He is interested in a gesture recognition software as the controller for his videogames. He would like to avoid remapping all of his control settings for all of his games. As such, he would use the built-in settings to customize what gestures are assigned to which keys.
 
+### James Conor, high school student
+James is a 16 year old high school student. He is a science student and is currently studying for
+his SAT. He hopes to join his local community college in Computer Science. He plans to become a
+game developer in the future.
+
+He is a great student and in his free time he
+likes to play video games with his friends. He has a gaming pc that he uses to play his games with.
+He does not only have a keyboard and a mouse to play his games with but also other controllers
+such as a joystick, steering wheel and pedals, etc.
+
+
 ***
 <a name = "hello-world"></a>
 ## Hello World 
