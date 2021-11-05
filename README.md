@@ -37,7 +37,7 @@ Timmy, age 16, is a high school student in the United States. He has a healthy i
 
 Timmy has plenty of experience in a variety of gaming software. He is interested in a gesture recognition software as the controller for his videogames. He would like to avoid remapping all of his control settings for all of his games. As such, he would use the built-in settings to customize what gestures are assigned to which keys.
 
-### James Conor, high school student
+#### James Conor, high school student
 James is a 16 year old high school student. He is a science student and is currently studying for
 his SAT. He hopes to join his local community college in Computer Science. He plans to become a
 game developer in the future.
@@ -46,6 +46,11 @@ He is a great student and in his free time he
 likes to play video games with his friends. He has a gaming pc that he uses to play his games with.
 He does not only have a keyboard and a mouse to play his games with but also other controllers
 such as a joystick, steering wheel and pedals, etc.
+
+#### Emily, A mother of two in San Fransico, California
+Emily is a 27 year old mother of one who lives in San Francisco, California. She was born in Oakland to parents who were partially deaf at a young age. While Emily isn’t deaf, individuals in her family are, including her son. She moved to San Francisco due to her husband’s job and currently works as an IoT Specialist from home while she takes care of her son. She obtained a degree in computer science, at the California Institute of Technology, to help achieve her dream job of working in the field of technology. With a husband and son, she looks forward to a life of happiness in her family.
+
+As an IoT Specialist, Emily has already done work in the coding field. She has used multiple languages and ultimately prefers to use python. In relation to this project, Emily believes that she could use the hand recognition features to help her son and other deaf individuals learn sign language from home. She has an interest in this project because her son can try to practice signing out letters and maybe some words while she has her own job to attend to.
 
 
 ***
