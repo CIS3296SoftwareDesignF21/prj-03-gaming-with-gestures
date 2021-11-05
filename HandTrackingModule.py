@@ -42,6 +42,8 @@ class handDetector():
                     cv2.circle(img, (cx, cy), 15, (255, 0, 255), cv2.FILLED)
         return lmList
 
+
+    
 def main():
     # Initialize webcam
     cam = cv2.VideoCapture(0)
@@ -86,6 +88,7 @@ def main():
     # Close window
     cam.release()
     cv2.destroyAllWindows()
- 
+
+
 if __name__ == "__main__":
     main()
