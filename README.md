@@ -19,6 +19,7 @@
 ***
 <a name = "project-overview"></a>
 ## Project Overview 
+Gestures are a natural way of communicating or clarifying ideas or intentions. This especially makes gestures a more user-friendly approach to gaming. Often when utilizing a controller, novice players are tasked with the initial learning curves of using buttons and joystick movements to perform successfully in a game. Furthermore, a controller can confine a player to more rigid and unnatural movements, resulting in the lack of immersion or gaming interaction. Considering this, the goal of this project is to enhance the gaming experience by detecting and recognizing gestures as the controls for gaming interaction. This is intended to be done using machine learning. Whether it is driving, dribbling, or performing a complex combination of hand seals, gestures can be an efficient and immersive way to interact with our favorite video games.
 
 <a name = "our-vision"></a>
 ### Our Vision
