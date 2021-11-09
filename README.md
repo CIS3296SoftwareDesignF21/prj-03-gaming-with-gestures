@@ -52,7 +52,11 @@ Emily is a 27 year old mother of one who lives in San Francisco, California. She
 
 As an IoT Specialist, Emily has already done work in the coding field. She has used multiple languages and ultimately prefers to use python. In relation to this project, Emily believes that she could use the hand recognition features to help her son and other deaf individuals learn sign language from home. She has an interest in this project because her son can try to practice signing out letters and maybe some words while she has her own job to attend to.
 
+#### Gustav, college sophomore
 
+Gustav is 20 years old. He is a college sophomore, and is currently using his computer for school, but he has limited mobility because of neurofibroma. He has difficulty using the mouse and keyboard because of motor accuracy issues.
+
+Gaming with Gestures can be adapted for controlling the mouse and keyboard through gestures by mapping the keys and mouse movements to certain gestures.
 
 ***
 <a name = "hello-world"></a>
