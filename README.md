@@ -95,6 +95,8 @@ However, Gustav can adapt Gaming with Gestures to work with the web browser to d
 <a name = "contributions"></a>
 ### Contributions
 
+1. [Week 1](./Week1.md)
+2. [Week 2](./Week2.md)
 
 ***
 <a name = "resources"></a>
