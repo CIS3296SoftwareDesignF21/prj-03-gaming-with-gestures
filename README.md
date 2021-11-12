@@ -15,6 +15,7 @@
     * [Meet Our Team](#team)
     * [Contributions](#contributions)
 6. [Resources](#resources)
+7. [UML Class Diagram](#uml-class)
 
 ***
 <a name = "project-overview"></a>
@@ -127,6 +128,8 @@ Leomar's contributions include...
 1. [Week 1](./Week1.md)
 2. [Week 2](./Week2.md)
 
+<a name = "uml"></a>
+![alt text](https://github.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/blob/ReadMe/Gestures.drawio.png)
 ***
 <a name = "resources"></a>
 ## Resources
