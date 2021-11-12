@@ -52,7 +52,11 @@ Emily is a 27 year old mother of one who lives in San Francisco, California. She
 
 As an IoT Specialist, Emily has already done work in the coding field. She has used multiple languages and ultimately prefers to use python. In relation to this project, Emily believes that she could use the hand recognition features to help her son and other deaf individuals learn sign language from home. She has an interest in this project because her son can try to practice signing out letters and maybe some words while she has her own job to attend to.
 
+#### Gustav, doctoral student by [Leomar Duran](https://github.com/lduran2)
 
+Gustav is 22 years old. He is a doctoral student at Temple University, and currently mostly uss his computer to do resarch for his thesis. Gustav has always had a type of neurofibromatosis that results in limited mobility. Because of his motor accuracy issues, he would have difficulty using the mouse and keyboard.
+
+However, Gustav can adapt Gaming with Gestures to work with the web browser to do thesis research, and he can even control a word processor using Gaming with Gestures. This takes advantage of the feature “Universal Compatibility and Flexibility”. Although the Gaming with Gestures project is marketed towards and tested on games, it is a universal control, and it can easily be adapted to any application.
 
 ***
 <a name = "hello-world"></a>
@@ -119,6 +123,9 @@ Hasnat's contributions include...
 Brandon's contributions include...
 
 Leomar's contributions include...
+
+1. [Week 1](./Week1.md)
+2. [Week 2](./Week2.md)
 
 ***
 <a name = "resources"></a>

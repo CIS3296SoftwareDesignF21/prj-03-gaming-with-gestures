@@ -3,14 +3,15 @@ import mediapipe as mp
 import time
 
 class handDetector():
-    def __init__(self, mode = False, maxHands = 2, detectionCon = 0.5, trackCon = 0.5):
+    def __init__(self, mode = False, maxHands = 2, modelComplex = 1, detectionCon = 0.5, trackCon = 0.5):
         self.mode = mode
         self.maxHands = maxHands
+        self.modelComplex = modelComplex
         self.detectionCon = detectionCon
         self.trackCon = trackCon
         
         self.mpHands = mp.solutions.hands
-        self.hands = self.mpHands.Hands(self.mode, self.maxHands, self.detectionCon, self.trackCon)
+        self.hands = self.mpHands.Hands(self.mode, self.maxHands, self.modelComplex, self.detectionCon, self.trackCon)
         self.mpDraw = mp.solutions.drawing_utils
     
     
@@ -42,6 +43,33 @@ class handDetector():
                     cv2.circle(img, (cx, cy), 15, (255, 0, 255), cv2.FILLED)
         return lmList
 
+    def fingerCombination(self, lmList):
+        
+        #the fingers are represented in binary manner. If a finger is shown it is 
+        #represented as 1 and if it is not it is represented as 0 starting from pinky.
+        #e.g. if only pinky is raised it will give the value 1(00001)
+        #if middle and index is raised, the value is 00110
+        #if thumb is raised, the value is 10000
+
+        fingerNum = 0
+        if len(lmList) != 0:
+            index = lmList[8][2] < lmList[6][2]
+            middle = lmList[12][2] < lmList[10][2]
+            ring = lmList[16][2] < lmList[14][2]
+            pinky = lmList[20][2] < lmList[18][2]
+            thumb = lmList[4][1] < lmList[3][1]
+
+            if pinky:
+                fingerNum += 10**0
+            if ring: 
+                fingerNum += 10**1
+            if middle: 
+                fingerNum += 10**2
+            if index:
+                fingerNum += 10**3
+            if thumb:
+                fingerNum += 10**4
+        return fingerNum
 
     
 def main():
