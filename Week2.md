@@ -6,3 +6,4 @@
 3. Static Gesture Recognition by Hasnat Hasib
 4. Recognize Hand Position by [Leomar Duran](https://github.com/lduran2)
 5. Update to Persona 5 (Gustav) by Leomar Duran
+6. New Static Gesture Class by [Brandon Bolden](https://github.com/tui84176)
