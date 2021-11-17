@@ -77,15 +77,17 @@ digraph GamingWithGestures {
     HandDirection [
         label = "{\N
             |+
-                mode: bool\l+
-                maxHands: int\l+
-                modelComplex: int\l+
-                detectionCon: float\l+
-                trackCon: float\l+
-                mpHands: module\l+
-                hands: mediapipe.python.solutions.hands.Hands\l+
-                mpDraw: module\l+
-                results: type\l
+                wCam: int\l+
+                hCam: int\l+
+                camera: cv2.VideoCapture\l+
+                pTime: float\l+
+                cTime: float\l+
+                fps: float\l+
+                detector: handDetector\l+
+                success: bool\l+
+                frame: numpy.ndarray\l+
+                lmList: list\l+
+                key: int\l
             |+
                 northHand(lmList: list): int\l+
                 eastHand(lmList: list): int\l+
