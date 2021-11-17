@@ -23,9 +23,13 @@ digraph GamingWithGestures {
                 mpDraw: module\l+
                 results: type\l
             |+
-                handDetector(mode: bool,\l maxHands: int, modelComplex: int,\l detectionCon: float, trackCon: float)\l+
-                findHands(img: numpy.ndarray,\l draw: bool): numpy.ndarray\l+
-                findPosition(img: numpy.ndarray,\l handNo: int, draw: bool): list\l+
+                handDetector(mode: bool, maxHands: int,\l
+                 modelComplex: int, detectionCon: float,\l
+                 trackCon: float)\l+
+                findHands(img: numpy.ndarray, draw: bool):\l
+                 numpy.ndarray\l+
+                findPosition(img: numpy.ndarray, handNo: int,\l
+                 draw: bool): list\l+
                 fingerCombination(lmList: list): int\l
         }"
     ]
