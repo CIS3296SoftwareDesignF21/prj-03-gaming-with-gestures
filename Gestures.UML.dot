@@ -30,6 +30,35 @@ digraph GamingWithGestures {
         }"
     ];
 
-    HandTrackingModule -> handDetector [style="dashed", taillabel="1", label="uses", headlabel="1  "];
-    FingerIdentifier -> handDetector [style="dashed", taillabel="1 ", label="uses", headlabel="1"];
+    FingerMovement [
+        label = "{\N||+
+            gameMovement(cameraVal: int): str\l
+        }"
+    ]
+
+    HandDirection [
+        label = "{\N||+
+            northHand(lmList: list): int\l+
+            eastHand(lmList: list): int\l+
+            westHand(lmList: list): int\l+
+            southHand(lmList: list): int\l
+        }"
+    ];
+
+    StaticGesturesClass [
+        label = "{Static Gestures Class||+
+            rock(lmList: list): int\l+
+            gnarly(lmList: list): int\l+
+            peace(lmList: list): int\l+
+            fist(lmList: list): int\l+
+            loser(lmList: list): int\l
+        }"
+    ]
+
+    HandTrackingModule -> handDetector [style="dashed", taillabel="1", label="uses", headlabel="1   "];
+    FingerIdentifier -> handDetector [style="dashed", taillabel="1", label="uses", headlabel="1   "];
+    FingerMovement -> handDetector [style="dashed", taillabel="1", label="uses", headlabel="1 "];
+    HandDirection -> handDetector [style="dashed", taillabel="1", label="uses", headlabel="1"];
+    StaticGesturesClass -> handDetector [style="dashed", taillabel="1", label="uses", headlabel="    1"];
+    
 }
