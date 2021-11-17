@@ -1,0 +1,35 @@
+digraph GamingWithGestures {
+    node [
+        shape = "record"
+        fontname = "Verdana,DejaVu Sans,Bitstream Vera Sans"
+    ];
+
+    HandTrackingModule [
+        label = "{\N||+
+            main()
+        }";
+    ];
+
+    handDetector [
+        label = "{\N||+
+            handDetector(mode: bool,\l maxHands: int, modelComplex: int,\l detectionCon: float, trackCon: float)\l+
+            findHands(img: numpy.ndarray,\l draw: bool): numpy.ndarray\l+
+            findPosition(img: numpy.ndarray,\l handNo: int, draw: bool): list\l+
+            fingerCombination(lmList: list): int\l
+        }"
+    ]
+
+    FingerIdentifier [
+        label = "{Finger Identifier||+
+            indexFinger(lmList: list): int\l+
+            middleFinger(lmList: list): int\l+
+            ringFinger(lmList: list): int\l+
+            pinkyFinger(lmList: list): int\l+
+            thumbFinger(lmList: list): int\l+
+            allFingers(lmList: list): int\l
+        }"
+    ];
+
+    HandTrackingModule -> handDetector [style="dashed", taillabel="1", label="uses", headlabel="1  "];
+    FingerIdentifier -> handDetector [style="dashed", taillabel="1 ", label="uses", headlabel="1"];
+}
