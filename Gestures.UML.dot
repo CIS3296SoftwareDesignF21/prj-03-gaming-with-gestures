@@ -6,52 +6,115 @@ digraph GamingWithGestures {
 
     HandTrackingModule [
         label = "{\N||+
-            main()
+            main()\l
         }";
     ];
 
     handDetector [
-        label = "{\N||+
-            handDetector(mode: bool,\l maxHands: int, modelComplex: int,\l detectionCon: float, trackCon: float)\l+
-            findHands(img: numpy.ndarray,\l draw: bool): numpy.ndarray\l+
-            findPosition(img: numpy.ndarray,\l handNo: int, draw: bool): list\l+
-            fingerCombination(lmList: list): int\l
+        label = "{\N
+            |+
+                mode: bool\l+
+                maxHands: int\l+
+                modelComplex: int\l+
+                detectionCon: float\l+
+                trackCon: float\l+
+                mpHands: module\l+
+                hands: mediapipe.python.solutions.hands.Hands\l+
+                mpDraw: module\l+
+                results: type\l
+            |+
+                handDetector(mode: bool,\l maxHands: int, modelComplex: int,\l detectionCon: float, trackCon: float)\l+
+                findHands(img: numpy.ndarray,\l draw: bool): numpy.ndarray\l+
+                findPosition(img: numpy.ndarray,\l handNo: int, draw: bool): list\l+
+                fingerCombination(lmList: list): int\l
         }"
     ]
 
     FingerIdentifier [
-        label = "{Finger Identifier||+
-            indexFinger(lmList: list): int\l+
-            middleFinger(lmList: list): int\l+
-            ringFinger(lmList: list): int\l+
-            pinkyFinger(lmList: list): int\l+
-            thumbFinger(lmList: list): int\l+
-            allFingers(lmList: list): int\l
+        label = "{Finger Identifier
+            |+
+                wCam: int\l+
+                hCam: int\l+
+                camera: cv2.VideoCapture\l+
+                pTime: float\l+
+                cTime: float\l+
+                fps: float\l+
+                detector: handDetector\l+
+                success: bool\l+
+                frame: numpy.ndarray\l+
+                lmList: list\l+
+                key: int\l
+            |+
+                indexFinger(lmList: list): int\l+
+                middleFinger(lmList: list): int\l+
+                ringFinger(lmList: list): int\l+
+                pinkyFinger(lmList: list): int\l+
+                thumbFinger(lmList: list): int\l+
+                allFingers(lmList: list): int\l
         }"
     ];
 
     FingerMovement [
-        label = "{\N||+
-            gameMovement(cameraVal: int): str\l
+        label = "{\N
+            |+
+                wCam: int\l+
+                hCam: int\l+
+                camera: cv2.VideoCapture\l+
+                pTime: float\l+
+                cTime: float\l+
+                fps: float\l+
+                detector: handDetector\l+
+                success: bool\l+
+                frame: numpy.ndarray\l+
+                lmList: list\l+
+                fingerComb: int\l+
+                key: int\l
+            |+
+                gameMovement(cameraVal: int): str\l
         }"
     ]
 
     HandDirection [
-        label = "{\N||+
-            northHand(lmList: list): int\l+
-            eastHand(lmList: list): int\l+
-            westHand(lmList: list): int\l+
-            southHand(lmList: list): int\l
+        label = "{\N
+            |+
+                mode: bool\l+
+                maxHands: int\l+
+                modelComplex: int\l+
+                detectionCon: float\l+
+                trackCon: float\l+
+                mpHands: module\l+
+                hands: mediapipe.python.solutions.hands.Hands\l+
+                mpDraw: module\l+
+                results: type\l
+            |+
+                northHand(lmList: list): int\l+
+                eastHand(lmList: list): int\l+
+                westHand(lmList: list): int\l+
+                southHand(lmList: list): int\l
         }"
     ];
 
     StaticGesturesClass [
-        label = "{Static Gestures Class||+
-            rock(lmList: list): int\l+
-            gnarly(lmList: list): int\l+
-            peace(lmList: list): int\l+
-            fist(lmList: list): int\l+
-            loser(lmList: list): int\l
+        label = "{Static Gestures Class
+            |+
+                wCam: int\l+
+                hCam: int\l+
+                camera: cv2.VideoCapture\l+
+                pTime: float\l+
+                cTime: float\l+
+                fps: float\l+
+                detector: handDetector\l+
+                success: bool\l+
+                frame: numpy.ndarray\l+
+                lmList: list\l+
+                fingerComb: int\l+
+                key: int\l
+            |+
+                rock(lmList: list): int\l+
+                gnarly(lmList: list): int\l+
+                peace(lmList: list): int\l+
+                fist(lmList: list): int\l+
+                loser(lmList: list): int\l
         }"
     ]
 
