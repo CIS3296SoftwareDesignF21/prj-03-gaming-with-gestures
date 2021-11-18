@@ -14,8 +14,12 @@
 5. [Team Contributions](#team-contributions)
     * [Meet Our Team](#team)
     * [Contributions](#contributions)
-6. [Resources](#resources)
-7. [UML Class Diagram](#uml-class)
+7. [UML Diagrams](#uml-dia)
+    * [Class Diagram](#class-dia)
+    * [Sequence Diagram](#seq-dia)
+8. [Resources](#resources)
+    
+
 
 ***
 <a name = "project-overview"></a>
@@ -128,8 +132,16 @@ Leomar's contributions include...
 1. [Week 1](./Week1.md)
 2. [Week 2](./Week2.md)
 
-<a name = "uml"></a>
+<a name = "uml-dia"></a>
+## UML Diagrams
+<a name = "class-dia"></a>
+### Class Diagram
 ![alt text](https://github.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/blob/ReadMe/Gestures.drawio.png)
+
+<a name = "seq-dia"></a>
+### Sequence Diagram
+![GWG UML Sequence Diagram](https://raw.githubusercontent.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/ReadMe/GWG_Sequence.svg)
+
 ***
 <a name = "resources"></a>
 ## Resources
