@@ -134,15 +134,20 @@ Leomar's contributions include...
 
 <a name = "uml-dia"></a>
 ## UML Diagrams
+
 <a name = "class-dia"></a>
-### Class Diagram
-![alt text](https://github.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/blob/ReadMe/Gestures.drawio.png)
+### Class Diagram v1
+[![Version 1 of UML](https://github.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/blob/ReadMe/Gestures.drawio.png)](https://github.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/blob/ReadMe/Gestures.drawio.png)
+
+### Class Diagram v2
+[![Version 2 of UML](https://github.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/blob/ReadMe/Gestures.UML.png)](https://github.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/blob/ReadMe/Gestures.UML.pdf)
 
 <a name = "seq-dia"></a>
 ### Sequence Diagram
 ![GWG UML Sequence Diagram](https://raw.githubusercontent.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/ReadMe/GWG_Sequence.svg)
 
 ***
+
 <a name = "resources"></a>
 ## Resources
 
