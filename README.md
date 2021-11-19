@@ -14,8 +14,12 @@
 5. [Team Contributions](#team-contributions)
     * [Meet Our Team](#team)
     * [Contributions](#contributions)
-6. [Resources](#resources)
-7. [UML Class Diagram](#uml-class)
+7. [UML Diagrams](#uml-dia)
+    * [Class Diagram](#class-dia)
+    * [Sequence Diagram](#seq-dia)
+8. [Resources](#resources)
+    
+
 
 ***
 <a name = "project-overview"></a>
@@ -127,10 +131,26 @@ Leomar's contributions include...
 
 1. [Week 1](./Week1.md)
 2. [Week 2](./Week2.md)
+2. [Week 3](./Week3.md)
 
-<a name = "uml"></a>
-![alt text](https://github.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/blob/ReadMe/Gestures.drawio.png)
+<a name = "uml-dia"></a>
+## UML Diagrams
+
+<a name = "class-dia"></a>
+### Class Diagram v1
+[![Version 1 of UML](https://github.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/blob/ReadMe/Gestures.drawio.png)](https://github.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/blob/ReadMe/Gestures.drawio.png)
+
+### Class Diagram v2
+[![Version 2 of UML](https://github.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/blob/ReadMe/Gestures.UML.png)](https://github.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/blob/ReadMe/Gestures.UML.pdf)
+
+<a name = "seq-dia"></a>
+### Sequence Diagram
+The user (Gamer) presented within this diagram interacts soley with the Graphical User Interface (GUI). On the GUI, there will be options to start gesture control mode, change gesture, change controller, and stop gesture control mode. If the user selects to start gesture control mode, the camera will then be opened, and the loop of tracking will begin. If during tracking, a gesture is recognized, it will result in its corresponding control on the current controller. For example, if the current controller is a screen controller and the peace sign maps to a mouse click, then once a peace sign is recognized, a mouse click will be performed. Tracking simply continues until another gesture is recognized. The user also can change the gestures that map to specific controls via the GUI as well as change the controls provided by changing the controller also via the GUI. Finally, if the user selects to stop gesture control mode, then the camera will be turned off which will cease tracking and gesture recognition.
+
+![GWG UML Sequence Diagram](https://raw.githubusercontent.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/ReadMe/GWG_Sequence2.svg)
+
 ***
+
 <a name = "resources"></a>
 ## Resources
 
