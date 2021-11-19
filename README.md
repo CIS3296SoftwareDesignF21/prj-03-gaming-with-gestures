@@ -144,7 +144,7 @@ Leomar's contributions include...
 
 <a name = "seq-dia"></a>
 ### Sequence Diagram
-![GWG UML Sequence Diagram](https://raw.githubusercontent.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/ReadMe/GWG_Sequence.svg)
+![GWG UML Sequence Diagram](https://raw.githubusercontent.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/ReadMe/GWG_Sequence2.svg)
 
 ***
 
