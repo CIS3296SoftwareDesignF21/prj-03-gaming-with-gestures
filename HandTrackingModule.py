@@ -76,34 +76,66 @@ def main():
     # Initialize webcam
     cam = cv2.VideoCapture(0)
     
+    # Creating a handDetector object
+    detector = handDetector()
+    
+    # start the recognition loop
+    recognizeGestures(cam, detector, recognizeThumbEnd, frameNoop)
+
+
+def recognizeGestures(cam, detector, recognizeCommand, frameTransform,
+        drawPosition = True,
+        fpsFormat = r'{}', org = (10, 70), color = (255, 0, 255)):
+    r'''
+     Loops until ^[, Q, or q is pressed while evaluating a recognition
+     module command on the frame.
+     @param cam : cv2.VideoCapture = video capture from a camera
+     @param detector : htm.handDetector = parses a camera frame for
+         hand data
+     @param recognizeCommand : (list, numpy.ndarray) -> NoneType
+         = a command that recognizes and reacts to hand gestures
+     @param frameTransform : numpy.ndarray -> numpy.ndarray = a command
+         that transforms a camera frame for further processing and
+         display
+     @param drawPosition : bool = whether to draw positions of key
+         landmarks on the frame
+     @param fpsFormat : str = formatting for frames per second
+     @param org : (int,)*2 = coordinates of point of origin (bottom
+         left corner)
+     @param color : (int,)*3 = RGB triplet for text color on camera
+     '''
     # Initialize time variables: Previous Time = pTime, Current Time = cTime
     pTime = 0
     cTime = 0
     
-    # Creating a handDetector object
-    detector = handDetector()
-    
     while True:
         # Read frames from webcam
         success, frame = cam.read()
+
+        # perform any necessary camera transformations
+        frame = frameTransform(frame)
         
         # Send frames to detector object
         frame = detector.findHands(frame)
             
         # Creating list of hand landmark data
-        lmList = detector.findPosition(frame)
-            
-        # Checking if the list is empty or not
-        if len(lmList) != 0:
-            print(lmList[4])
+        lmList = detector.findPosition(frame, draw = drawPosition)
+        
+        # call the recognition command
+        recognizeCommand(lmList, frame)
+        
+        #Code for images
+        #h, w, c = overlayList[0].shape
+        #img[0:h, 0:w] = overlayList[0]
+        
         
         # Track Frames per Seconds (FPS)
         cTime = time.time()
-        FPS = 1 / (cTime - pTime)
+        FPS = int(1 / (cTime - pTime))
         pTime = cTime
         
         # Displays the FPS value onto the frame
-        cv2.putText(frame, str(int(FPS)), (10, 70), cv2.FONT_HERSHEY_PLAIN, 3, (255, 0, 255), 3)
+        cv2.putText(frame, fpsFormat.format(FPS), org, cv2.FONT_HERSHEY_PLAIN, 3, color, 3)
         
         # Display frames in a new window called Camera
         cv2.imshow('Camera', frame)
@@ -116,6 +148,26 @@ def main():
     # Close window
     cam.release()
     cv2.destroyAllWindows()
+
+
+def frameNoop(frame):
+    r'''
+     Does nothing to the frame.
+     @return the unaltered frame
+     '''
+    return frame
+
+
+def recognizeThumbEnd(lmList, frame):
+    r'''
+     Prints the location of the end of the thumb.
+     @param lmList : list = landmark list representing the hand
+     @param frame : numpy.ndarray = unused for this implementation, but
+         represents the camera frame
+     '''
+    # Checking if the list is empty or not
+    if len(lmList) != 0:
+        print(lmList[4])
 
 
 if __name__ == "__main__":

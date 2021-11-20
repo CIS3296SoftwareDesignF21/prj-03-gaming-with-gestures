@@ -1,8 +1,16 @@
 digraph GamingWithGestures {
+    graph [
+        fontname = "Verdana,DejaVu Sans,Bitstream Vera Sans"
+    ]
+
     node [
         shape = "record",
         fontname = "Verdana,DejaVu Sans,Bitstream Vera Sans"
     ];
+
+    edge [
+        fontname = "Verdana,DejaVu Sans,Bitstream Vera Sans"
+    ]
 
     subgraph cluster_mediapipe_python_solutions_hands
     {
@@ -14,7 +22,7 @@ digraph GamingWithGestures {
                  max_num_hands: int, model_complexity: int,\l
                  min_detection_confidence: float,\l
                  min_tracking_confidence: float)\l+
-                process(image: np.ndarray): type\l
+                process(image: numpy.ndarray): type\l
             }";
         ];
     };
@@ -169,7 +177,7 @@ digraph GamingWithGestures {
     HandDirection -> handDetector [
         style="dashed", label="uses",
         taillabel="0..1  ",
-        arrowhead="vee", headlabel="1\n"
+        arrowhead="vee", headlabel="1  \n"
     ];
     StaticGesturesClass -> handDetector [
         style="dashed", label="uses",
