@@ -22,7 +22,7 @@ def trackingBox(frame, horizontal, vertical, draw = True):
     # Probably should estimate values regarding the shape of the box and take in those values as arguments to this function
     x1, x2 = horizontal
     y1, y2 = vertical
-    new_frame = cv2.rectangle(frame, (x1, y1), (x2, y2), (192, 192, 192), 2)
+    new_frame = cv2.rectangle(frame, (x1, y1), (x2, y2), (255, 255, 255), 2)
     return new_frame
 
 
@@ -156,30 +156,28 @@ def vKey(frame, lmList, draw = True):
 
 
 width, height = pg.size()
-print(width)
-print(height)
+print(f'Screen Width: {width}')
+print(f'Screen Height: {height}')
 
 
-# In[19]:
+# In[15]:
 
 
 # Camera setup
 wCam, hCam = 1280, 720
 camera = cv2.VideoCapture(0)
-if camera:
-    camera.set(3, wCam)
-    camera.set(4, hCam)
+camera.set(3, wCam)
+camera.set(4, hCam)
 
-#smoothing = 8
+pTime = 0
+
 prev_x, prev_y = 0, 0
-clck = 0x5D
-#dk.PressKey(clck)
 
 # Hand object setup
 detector = htm.handDetector(detectionCon = 0.75)
 
 
-# In[20]:
+# In[16]:
 
 
 while True:
@@ -194,10 +192,18 @@ while True:
     
     #frame = trackingBox(frame)
     
-    horizontal = (200, 840)
+    horizontal = (300, 940)
     vertical = (50, 330)
     
     frame = trackingBox(frame, horizontal, vertical)
+    cv2.putText(frame, f'Tracking', (40, 140), cv2.FONT_HERSHEY_PLAIN, 3, (255, 255, 255), 3)
+    cv2.putText(frame, f'Box ->', (60, 190), cv2.FONT_HERSHEY_PLAIN, 3, (255, 255, 255), 3)
+    
+    cTime = time.time()
+    fps = 1 / (cTime - pTime)
+    pTime = cTime
+    
+    cv2.putText(frame, f'FPS: {int(fps)}', (1000, 140), cv2.FONT_HERSHEY_PLAIN, 3, (255, 255, 255), 3)
     
     if len(lmList) != 0:
         
@@ -247,12 +253,6 @@ while True:
 # Close camera and window
 camera.release()
 cv2.destroyAllWindows()
-
-
-# In[ ]:
-
-
-
 
 
 # In[ ]:
