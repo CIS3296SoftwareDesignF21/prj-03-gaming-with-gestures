@@ -37,10 +37,10 @@ Rebecca, age 15, is a high school student studying at Villa Park High School in 
 
 Rebecca, has taken interest in the Gaming with Gestures application because she understands that it is going to allow her the ability to still play popular dancing games, but without the high price or the hardware learning curve. Because of the Gaming with Gestures functionality to recognize dynamic gestures, Rebecca will be able to play her favorite dancing games and have her physical movements picked up and registered as game controls.
 
-#### [Phi Truong](https://github.com/PT141) | Timmy Ternur, A high school student
-Timmy, age 16, is a high school student in the United States. He has a healthy interest in technology and videogames. His father works as a mechanic and his mother is a teacher at the nearby middle school. He is planning on pursuing a computer science degree when he graduates from high school.
+#### [Phi Truong](https://github.com/PT141) | Jerry Dinkleburg, A father in New York City, New York
+Jerry used to play video games when he was younger. However, life circumstances led to him dropping off of videogames. Now that his life is stable, he now wishes to go back into the gaming sphere. He used to play on the Xbox 360, and one thing he remembers loving about it was the Xbox Kinect. He would love to find a way to recreate that experience in any sort of way. 
 
-Timmy has plenty of experience in a variety of gaming software. He is interested in a gesture recognition software as the controller for his videogames. He would like to avoid remapping all of his control settings for all of his games. As such, he would use the built-in settings to customize what gestures are assigned to which keys.
+Jerry is rather average with technology. He has a laptop to do his work and spend his leisure time on. He is aware of setting up software and hardware to suit his needs from his gaming time earlier in his life. He would love if there was a software program that could imitate the full-body interactions of the Kinect, allowing the user to utilize their full body as a controller.
 
 #### [Hasnat Hasib](https://github.com/HHasib) | James Conor, high school student
 James is a 16 year old high school student. He is a science student and is currently studying for
