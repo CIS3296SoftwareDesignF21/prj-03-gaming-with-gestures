@@ -7,19 +7,35 @@ W_CAM, H_CAM = 640, 480
 # the default detection confidence
 DEFAULT_DETECTION_CON = 0.75
 
+def start(recognizeCommand):
+    r'''
+     Starts looping until ^[, Q, or q is pressed while evaluating a
+     recognition module command on the frame. This is a convenience
+     function for a single recognition module.
+     @param recognizeCommand : (list, numpy.ndarray) -> NoneType
+         = a command for recognizing and reacting to hand gestures
+     '''
+    recognitions = RecognitionList(aggregateUntilFalse)
+    recognitions.add(recognizeCommand)
+    recognitions.start()
+
 class RecognitionList:
     r'''
      A list of recognition modules that can be added to, started and
      called.
      '''
 
-    def __init__(self):
+    def __init__(self, aggregate):
         r'''
          Creates a new empty recognition list.
+         @param aggregate : (list, list, numpy.ndarray) -> NoneType =
+             a command for aggregating the listeners; a strategy on how
+             to notify each listener
          '''
-        self.listeners = []
+        self.listeners = []         # 
+        self.aggregate = aggregate  # the aggregation strategy
 
-    def add(recognizeCommand):
+    def add(self, recognizeCommand):
         r'''
          Adds the given recognition module command to listen to gestures.
          @param recognizeCommand : (list, numpy.ndarray) -> NoneType
@@ -27,19 +43,16 @@ class RecognitionList:
          '''
         self.listeners.append(recognizeCommand)
 
-    def call(lmList, frame):
+    def call(self, lmList, frame):
         r'''
          Calls each recognition module command with the given landmark
-         list and frame.
+         list and frame, according to the aggregator command.
          @param lmList : list = landmark list representing the hand
          @param frame : numpy.ndarray = represents the camera frame
          '''
-        for command in self.listeners:
-            # if a listener returns false, then stop
-            if (not(self.listeners(lmList, frame))):
-                break
+        self.aggregate(self.listeners, lmList, frame)
 
-    def start():
+    def start(self):
         r'''
          Starts looping until ^[, Q, or q is pressed while evaluating
          each recognition module command on the frame.
@@ -72,17 +85,19 @@ class RecognitionList:
             fpsFormat = r'FPS: {}', org = (400, 70), color = (0,0,0))
 # class RecognitionList
 
-def start(recognizeCommand):
+def aggregateUntilFalse(listeners, lmList, frame):
     r'''
-     Starts looping until ^[, Q, or q is pressed while evaluating a
-     recognition module command on the frame. This is a convenience
-     function for a single recognition module.
-     @param recognizeCommand : (list, numpy.ndarray) -> NoneType
-         = a command for recognizing and reacting to hand gestures
+     Aggregates listeners by calling them in order until one returns
+     false.
+     @param listeners : list<(list, numpy.ndarray) -> NoneType> = list
+         of recognition listeners
+     @param lmList : list = landmark list representing the hand
+     @param frame : numpy.ndarray = represents the camera frame
      '''
-    recognitions = RecognitionList()
-    recognitions.add(recognizeCommand)
-    recognitions.start()
+    for command in listeners:
+        # if a listener returns false, then stop
+        if (not(command(lmList, frame))):
+            return
 
 def calibrate(camera):
     r'''
