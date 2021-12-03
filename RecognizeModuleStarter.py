@@ -15,7 +15,7 @@ def start(recognizeCommand):
      @param recognizeCommand : (list, numpy.ndarray) -> NoneType
          = a command for recognizing and reacting to hand gestures
      '''
-    recognitions = RecognitionList(aggregateUntilFalse)
+    recognitions = RecognitionList(aggregateUntilTrue)
     recognitions.add(recognizeCommand)
     recognitions.start()
 
@@ -85,18 +85,18 @@ class RecognitionList:
             fpsFormat = r'FPS: {}', org = (400, 70), color = (0,0,0))
 # class RecognitionList
 
-def aggregateUntilFalse(listeners, lmList, frame):
+def aggregateUntilTrue(listeners, lmList, frame):
     r'''
      Aggregates listeners by calling them in order until one returns
-     false.
+     true.
      @param listeners : list<(list, numpy.ndarray) -> NoneType> = list
          of recognition listeners
      @param lmList : list = landmark list representing the hand
      @param frame : numpy.ndarray = represents the camera frame
      '''
     for command in listeners:
-        # if a listener returns false, then stop
-        if (not(command(lmList, frame))):
+        # if a listener returns true, then stop
+        if (command(lmList, frame)):
             return
 
 def calibrate(camera):
