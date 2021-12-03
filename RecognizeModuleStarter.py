@@ -32,8 +32,8 @@ class RecognitionList:
              a command for aggregating the listeners; a strategy on how
              to notify each listener
          '''
-        self.listeners = []         # 
-        self.aggregate = aggregate  # the aggregation strategy
+        self.listeners = []             # observer commands to notify
+        self.aggregate = aggregate      # the aggregation strategy
 
     def add(self, recognizeCommand):
         r'''
@@ -52,15 +52,24 @@ class RecognitionList:
          '''
         self.aggregate(self.listeners, lmList, frame)
 
-    def start(self):
+    def start(self, frameTransforms=tuple(),
+        camSize=(W_CAM, H_CAM), org=(400, 70), color=(0,0,0)):
         r'''
          Starts looping until ^[, Q, or q is pressed while evaluating
          each recognition module command on the frame.
+         @param frameTransforms : tuple<numpy.ndarray -> numpy.ndarray>
+             = a tuple of commands that transform a camera frame for
+             further processing and display
+         @param camSize : (int,)*2 = the width and height of the camera
+         @param org : (int,)*2 = coordinates of point of origin (bottom
+             left corner) for the FPS
+         @param color : (int,)*3 = RGB triplet for text color on camera
+             of FPS
          '''
         # Initialize webcam
         camera = cv2.VideoCapture(0)
-        camera.set(3, W_CAM)
-        camera.set(4, H_CAM)
+        camera.set(3, camSize[0])
+        camera.set(4, camSize[1])
         
         # For importing pictures
         #folderPath = "FingerImages"
@@ -78,11 +87,12 @@ class RecognitionList:
         # Creating a handDetector object
         detector = htm.handDetector(detectionCon = detectionCon)
         
+        # prepend camera flip to the frameTransforms
+        frameTransforms = (frameFlip,) + frameTransforms
         # start the recognition loop
         htm.recognizeGestures(camera, detector, self.call,
-            frameFlip,
-            drawPosition = False,
-            fpsFormat = r'FPS: {}', org = (400, 70), color = (0,0,0))
+            frameTransforms, drawPosition = False,
+            fpsFormat = r'FPS: {}', org = org, color = color)
 # class RecognitionList
 
 def aggregateUntilTrue(listeners, lmList, frame):
