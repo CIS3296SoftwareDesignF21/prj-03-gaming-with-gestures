@@ -5,8 +5,6 @@
     * [Our Vision](#our-vision)
     * [Personas and Key Features](#personas-features)
 2. [Hello World](#hello-world)
-    * [How to Download and Install Hello World](#download-install)
-    * [How to Run Hello World](#run)
 3. [Technologies](#technologies)
 4. [New Releases](#new-releases)
     * [How to Download and Install New Release](#download-install-release)
@@ -14,10 +12,10 @@
 5. [Team Contributions](#team-contributions)
     * [Meet Our Team](#team)
     * [Contributions](#contributions)
-7. [UML Diagrams](#uml-dia)
+6. [UML Diagrams](#uml-dia)
     * [Class Diagram](#class-dia)
     * [Sequence Diagram](#seq-dia)
-8. [Resources](#resources)
+7. [Resources](#resources)
     
 
 
@@ -72,13 +70,6 @@ Finger Identifier (FID) is an application designed to identify which of the user
 * Programmed exclusively for right hand use
 * Only one finger or all fingers can be identified at a time. Therefore, if the user attempts to identify the both the index finger and the middle finger at the same time, there will be no single finger identified and displayed.
 
-<a name = "download-install"></a>
-### How to Download and Install Finger Identifier [FID]
-
-<a name = "run"></a>
-### How to Run Finger Identifier [FID]
-
-
 ***
 <a name = "technologies"></a>
 ## Technologies
@@ -100,10 +91,11 @@ Finger Identifier (FID) is an application designed to identify which of the user
 
 <a name = "download-install-release"></a>
 ### How to Download and Install New Release
+In order to download ScreenController, click on the latest ScreenController release on the side. From there, download ScreenController.exe and wait until it finishes downloading.
 
 <a name = "run-release"></a>
 ### How to Run New Release
-
+In order to run the executable, click on the file to run it. It should take a while to execute, but when it finishes there should be an indicator that the camera on your machine is turned on (such as a light next to the camera). When this appears, the program is finally running!
 
 ***
 <a name = "team-contributions"></a>
@@ -153,8 +145,10 @@ The user (Gamer) presented within this diagram interacts soley with the Graphica
 
 <a name = "resources"></a>
 ## Resources
-
-
+https://google.github.io/mediapipe/solutions/hands.html </br>
+https://github.com/google/mediapipe/   </br>
+https://trello.com/b/ABXoxfJg/gaming-with-gestures-gesture-recognition-using-machine-learning   </br>
+https://github.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures
 ***
 
 
