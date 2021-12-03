@@ -123,7 +123,8 @@ Leomar's contributions include...
 
 1. [Week 1](./Week1.md)
 2. [Week 2](./Week2.md)
-2. [Week 3](./Week3.md)
+3. [Week 3](./Week3.md)
+4. [Week 4](./Week4.md) 
 
 <a name = "uml-dia"></a>
 ## UML Diagrams
