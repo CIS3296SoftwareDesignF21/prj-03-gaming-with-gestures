@@ -17,6 +17,7 @@ DOWN = 0x50
 LEFT = 0x4B
 RIGHT = 0x4D
 UP = 0x48
+SPACE = 0x39
 
 # C struct redefinitions 
 PUL = ctypes.POINTER(ctypes.c_ulong)

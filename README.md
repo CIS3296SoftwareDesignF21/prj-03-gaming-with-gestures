@@ -14,8 +14,12 @@
 5. [Team Contributions](#team-contributions)
     * [Meet Our Team](#team)
     * [Contributions](#contributions)
-6. [Resources](#resources)
-7. [UML Class Diagram](#uml-class)
+7. [UML Diagrams](#uml-dia)
+    * [Class Diagram](#class-dia)
+    * [Sequence Diagram](#seq-dia)
+8. [Resources](#resources)
+    
+
 
 ***
 <a name = "project-overview"></a>
@@ -33,10 +37,10 @@ Rebecca, age 15, is a high school student studying at Villa Park High School in 
 
 Rebecca, has taken interest in the Gaming with Gestures application because she understands that it is going to allow her the ability to still play popular dancing games, but without the high price or the hardware learning curve. Because of the Gaming with Gestures functionality to recognize dynamic gestures, Rebecca will be able to play her favorite dancing games and have her physical movements picked up and registered as game controls.
 
-#### [Phi Truong](https://github.com/PT141) | Timmy Ternur, A high school student
-Timmy, age 16, is a high school student in the United States. He has a healthy interest in technology and videogames. His father works as a mechanic and his mother is a teacher at the nearby middle school. He is planning on pursuing a computer science degree when he graduates from high school.
+#### [Phi Truong](https://github.com/PT141) | Jerry Dinkleburg, A father in New York City, New York
+Jerry used to play video games when he was younger. However, life circumstances led to him dropping off of videogames. Now that his life is stable, he now wishes to go back into the gaming sphere. He used to play on the Xbox 360, and one thing he remembers loving about it was the Xbox Kinect. He would love to find a way to recreate that experience in any sort of way. 
 
-Timmy has plenty of experience in a variety of gaming software. He is interested in a gesture recognition software as the controller for his videogames. He would like to avoid remapping all of his control settings for all of his games. As such, he would use the built-in settings to customize what gestures are assigned to which keys.
+Jerry is rather average with technology. He has a laptop to do his work and spend his leisure time on. He is aware of setting up software and hardware to suit his needs from his gaming time earlier in his life. He would love if there was a software program that could imitate the full-body interactions of the Kinect, allowing the user to utilize their full body as a controller.
 
 #### [Hasnat Hasib](https://github.com/HHasib) | James Conor, high school student
 James is a 16 year old high school student. He is a science student and is currently studying for
@@ -127,10 +131,26 @@ Leomar's contributions include...
 
 1. [Week 1](./Week1.md)
 2. [Week 2](./Week2.md)
+2. [Week 3](./Week3.md)
 
-<a name = "uml"></a>
-![alt text](https://github.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/blob/ReadMe/Gestures.drawio.png)
+<a name = "uml-dia"></a>
+## UML Diagrams
+
+<a name = "class-dia"></a>
+### Class Diagram v1
+[![Version 1 of UML](https://github.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/blob/ReadMe/Gestures.drawio.png)](https://github.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/blob/ReadMe/Gestures.drawio.png)
+
+### Class Diagram v2
+[![Version 2 of UML](https://github.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/blob/ReadMe/Gestures.UML.png)](https://github.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/blob/ReadMe/Gestures.UML.pdf)
+
+<a name = "seq-dia"></a>
+### Sequence Diagram
+The user (Gamer) presented within this diagram interacts soley with the Graphical User Interface (GUI). On the GUI, there will be options to start gesture control mode, change gesture, change controller, and stop gesture control mode. If the user selects to start gesture control mode, the camera will then be opened, and the loop of tracking will begin. If during tracking, a gesture is recognized, it will result in its corresponding control on the current controller. For example, if the current controller is a screen controller and the peace sign maps to a mouse click, then once a peace sign is recognized, a mouse click will be performed. Tracking simply continues until another gesture is recognized. The user also can change the gestures that map to specific controls via the GUI as well as change the controls provided by changing the controller also via the GUI. Finally, if the user selects to stop gesture control mode, then the camera will be turned off which will cease tracking and gesture recognition.
+
+![GWG UML Sequence Diagram](https://raw.githubusercontent.com/CIS3296SoftwareDesignF21/prj-03-gaming-with-gestures/ReadMe/GWG_Sequence2.svg)
+
 ***
+
 <a name = "resources"></a>
 ## Resources
 
