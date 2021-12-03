@@ -95,7 +95,7 @@ In order to download ScreenController, click on the latest ScreenController rele
 
 <a name = "run-release"></a>
 ### How to Run New Release
-In order to run the executable, click on the file to run it. It should take a while to execute, but when it finishes there should be an indicator that the camera on your machine is turned on (such as a light next to the camera). When this appears, the program is finally running!
+In order to run the executable, click on the file to run it. It should take a while to execute, but when it finishes there should be an indicator that the camera on your machine is turned on (such as a light next to the camera). When this appears, the program is finally running! For a quick tutorial, click <a href="https://drive.google.com/file/d/1tjsxGIvNLwNwHDA8qbJEQHZ0p0oB-F3X/view?usp=sharing">here</a>.
 
 ***
 <a name = "team-contributions"></a>
