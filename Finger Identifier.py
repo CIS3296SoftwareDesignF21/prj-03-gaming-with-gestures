@@ -116,14 +116,14 @@ def allFingers(lmList):
             return 0
 
 
-# In[ ]:
+# In[8]:
 
 
 def startIdentifyingFingers():
     rms.start(identifyFingers)
 
 
-# In[8]:
+# In[9]:
 
 
 def identifyFingers(lmList, frame):
@@ -146,4 +146,11 @@ def identifyFingers(lmList, frame):
         cv2.putText(frame, f'All Fingers', (0, 70), cv2.FONT_HERSHEY_PLAIN, 3, (0, 0, 0), 3)
         return True
     return False
+
+
+# In[10]:
+
+
+if __name__ == "__main__":
+    startIdentifyingFingers()
 
