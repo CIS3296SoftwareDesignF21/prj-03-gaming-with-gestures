@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+notebooks=(Finger\ Identifier FingerMovement HandDirection Main Static\ Gestures\ Class Untitled)
+for file in ${notebooks[*]}; do
+	rm -f $file.py
+done

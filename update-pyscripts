@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+./clean-pyscripts
+notebooks=(Finger\ Identifier FingerMovement HandDirection Main Static\ Gestures\ Class Untitled)
+for file in ${notebooks[*]}; do
+	python -m jupyter nbconvert --to script $file.ipynb
+done
+
