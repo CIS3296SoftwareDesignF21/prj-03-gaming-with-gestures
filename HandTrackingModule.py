@@ -83,7 +83,7 @@ def main():
     recognizeGestures(cam, detector, recognizeThumbEnd, frameNoop)
 
 
-def recognizeGestures(cam, detector, recognizeCommand, frameTransform,
+def recognizeGestures(cam, detector, recognizeCommand, frameTransforms,
         drawPosition = True,
         fpsFormat = r'{}', org = (10, 70), color = (255, 0, 255)):
     r'''
@@ -94,15 +94,17 @@ def recognizeGestures(cam, detector, recognizeCommand, frameTransform,
          hand data
      @param recognizeCommand : (list, numpy.ndarray) -> NoneType
          = a command that recognizes and reacts to hand gestures
-     @param frameTransform : numpy.ndarray -> numpy.ndarray = a command
-         that transforms a camera frame for further processing and
+     @param frameTransforms : tuple<numpy.ndarray -> numpy.ndarray> =
+         a tuple of commands
+         that transform a camera frame for further processing and
          display
      @param drawPosition : bool = whether to draw positions of key
          landmarks on the frame
      @param fpsFormat : str = formatting for frames per second
      @param org : (int,)*2 = coordinates of point of origin (bottom
-         left corner)
-     @param color : (int,)*3 = RGB triplet for text color on camera
+         left corner) for the FPS
+     @param color : (int,)*3 = RGB triplet for text color on camera of
+         FPS
      '''
     # Initialize time variables: Previous Time = pTime, Current Time = cTime
     pTime = 0
@@ -113,7 +115,8 @@ def recognizeGestures(cam, detector, recognizeCommand, frameTransform,
         success, frame = cam.read()
 
         # perform any necessary camera transformations
-        frame = frameTransform(frame)
+        for transform in frameTransforms:
+            frame = transform(frame)
         
         # Send frames to detector object
         frame = detector.findHands(frame)
