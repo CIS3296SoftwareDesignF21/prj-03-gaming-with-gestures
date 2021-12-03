@@ -95,7 +95,13 @@ In order to download ScreenController, click on the latest ScreenController rele
 
 <a name = "run-release"></a>
 ### How to Run New Release
-In order to run the executable, click on the file to run it. It should take a while to execute, but when it finishes there should be an indicator that the camera on your machine is turned on (such as a light next to the camera). When this appears, the program is finally running! For a quick tutorial, click <a href="https://drive.google.com/file/d/1tjsxGIvNLwNwHDA8qbJEQHZ0p0oB-F3X/view?usp=sharing">here</a>.
+In order to run the executable, click on the file to run it. It should take a while to execute, but when it finishes there should be an indicator that the camera on your machine is turned on (such as a light next to the camera). When this appears, the program is finally running! </br> 
+
+To use this software,
+<li>Standard Pose is an open hand</li>
+<li>Close your thumb to the center of your palm to click</li>
+<li>Make a fist to open up the virtual keyboard</li>
+<li>To close the software, hold up your pinky and only your pinky</li>
 
 ***
 <a name = "team-contributions"></a>
